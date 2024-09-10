@@ -31,7 +31,7 @@ const Home = () => {
               exit="hidden"
               transition={{ duration: 2, ease: "easeInOut" }}
             >
-              <h1 className="h1 text-accent">
+              <h1 className="text-[35px] leading-tight md:text-[57px] md:leading-[1.3] mb-8 font-semibold text-accent">
                 Perfecting the Art of Frontend Engineering {""}
                 <span className="text-white">In the Digital Realm</span>
               </h1>
