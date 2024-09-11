@@ -15,7 +15,7 @@ const Socials = () => {
           <SiGithub />
         </Link>
         <Link
-          href={"https://willowy-sunshine-70af57.netlify.app/"}
+          href={"https://gokulwithgritt.netlify.app/"}
           className="hover:text-accent transition-all duration-300"
         >
           <CgWebsite />

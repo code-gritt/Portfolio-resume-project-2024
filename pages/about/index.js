@@ -1,6 +1,23 @@
 // icons
 import { useState } from "react";
 import Circles from "../../components/Circles";
+import CountUp from "react-countup";
+import { motion } from "framer-motion";
+
+const fadeIn = {
+  initial: {
+    opacity: 0,
+    y: "-100%",
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+  exit: {
+    opacity: 0,
+    x: "100%",
+  },
+};
 
 //  data
 const aboutData = [
@@ -154,10 +171,75 @@ const About = () => {
 
   return (
     <>
-      <div className="h-full overflow-y-scroll bg-primary/30 py-32 text-center xl:text-left">
+      <div className="h-full overflow-y-auto bg-primary/30 py-32 text-center xl:text-left">
         <Circles />
+
         <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
-          <div className="flex-1 flex flex-col justify-center">Text</div>
+          <div className="flex-1 flex flex-col justify-center">
+            <motion.div
+              variants={fadeIn}
+              initial="initial"
+              animate="animate"
+              exit="hidden"
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              <h2 className="text-[35px] leading-tight md:text-[51px] md:leading-[1.3] mb-4 font-semibold">
+                “Websites promote you 24/7:{" "}
+                <span className="text-accent">No employee will do that.</span>”
+                - Paul Cookson
+              </h2>
+            </motion.div>
+            <motion.div
+              variants={fadeIn}
+              initial="initial"
+              animate="animate"
+              exit="hidden"
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              <p className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+                “If there’s one thing I learnt by working on a lot of different
+                Web sites, it’s that almost any design idea-no matter how
+                appallingly bad-can be made usable in the right circumstances,
+                with enough effort.”
+              </p>
+            </motion.div>
+            <div>
+              <motion.div
+                variants={fadeIn}
+                initial="initial"
+                animate="animate"
+                exit="hidden"
+                transition={{ duration: 1, ease: "easeInOut" }}
+              >
+                <div className="flex flex-1 xl:gap-x-6 mb-5">
+                  <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={5} duration={3} />
+                    </div>
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Years Of Experience
+                    </div>
+                  </div>
+                  <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={250} duration={3} />+
+                    </div>
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Satisfied Clients
+                    </div>
+                  </div>
+                  <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                    <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                      <CountUp start={0} end={100} duration={3} />+
+                    </div>
+                    <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
+                      Finished Projects
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
           <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemIndex) => {
@@ -175,17 +257,16 @@ const About = () => {
                 );
               })}
             </div>
-            <div className="bg-pink-400/10 p-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start rounded-lg">
+            <div className="bg-pink-400/10  p-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start rounded-lg">
               {aboutData[index].info.map((item, itemIndex) => {
                 return (
                   <div key={itemIndex}>
                     <div className="underline underline-offset-4 mb-2">
                       {item.title}
                     </div>
-                    {/* <div className="hidden md:flex">-</div> */}
 
                     <div className="flex gap-x-4">{item.desc}</div>
-                    <div className="flex gap-x-4">{item.role}</div>
+                    <div>{item.role}</div>
                     <div>{item.stage}</div>
                     <div className="flex gap-x-4">{item.compdesc}</div>
                   </div>
