@@ -71,7 +71,7 @@ const WorkSlider = () => {
               <div className="grid grid-cols-2 grid-rows-2 gap-4">
                 {slide.images.map((image, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <div>{image.title}</div>
                       <div>
                         <Image
