@@ -30,7 +30,7 @@ const Contact = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
             >
               <h2 className="text-[35px] leading-tight md:text-[51px] md:leading-[1.3] font-semibold text-center mb-2">
-                Let's <span className="text-accent">connect.</span>
+                Let us <span className="text-accent">connect.</span>
               </h2>
             </motion.div>
             <motion.div
@@ -49,7 +49,7 @@ const Contact = () => {
                 <textarea placeholder="Message" className="textarea"></textarea>
                 <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                    Let's talk
+                    Let us talk
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
