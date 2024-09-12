@@ -1,5 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
+import ComputersCanvas from "../../components/Computers";
 
 const fadeIn = {
   initial: {
@@ -19,9 +20,9 @@ const fadeIn = {
 const Contact = () => {
   return (
     <>
-      <div className="h-full bg-primary/30">
+      <div className="h-full flex flex-col xl:flex-row gap-x-8 bg-primary/30">
         <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-          <div className="flex flex-col w-full max-w-[700px]">
+          <div className="flex flex-col w-full max-w-[400px]">
             <motion.div
               variants={fadeIn}
               initial="initial"
@@ -56,6 +57,9 @@ const Contact = () => {
               </form>
             </motion.div>
           </div>
+        </div>
+        <div className="relative w-full h-screen mx-auto">
+          <ComputersCanvas />
         </div>
       </div>
     </>
