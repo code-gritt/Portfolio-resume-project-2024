@@ -22,7 +22,7 @@ const fadeIn = {
 const Work = () => {
   return (
     <>
-      <div className="h-full bg-primary/30 py-36 flex items-center">
+      <div className="h-full overflow-y-auto bg-primary/30 py-36 flex items-center">
         <Circles />
 
         <div className="container mx-auto">
@@ -35,7 +35,7 @@ const Work = () => {
                 exit="hidden"
                 transition={{ duration: 1, ease: "easeInOut" }}
               >
-                <h2 className="text-[35px] leading-tight md:text-[51px] md:leading-[1.3] mb-4 font-semibold xl:mt-8">
+                <h2 className="text-[35px] hidden lg:block leading-tight md:text-[51px] md:leading-[1.3] mb-4 font-semibold xl:mt-8">
                   My projects <span className="text-accent">.</span>
                 </h2>
                 <WebDesign />
