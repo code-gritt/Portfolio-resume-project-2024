@@ -35,7 +35,7 @@ const Work = () => {
                 exit="hidden"
                 transition={{ duration: 1, ease: "easeInOut" }}
               >
-                <h2 className="text-[35px] hidden lg:block leading-tight md:text-[51px] md:leading-[1.3] mb-4 font-semibold xl:mt-8">
+                <h2 className="text-[20px] absolute top-80 left-28 md:block leading-tight md:text-[51px] md:leading-[1.3] mb-4 font-semibold xl:mt-8">
                   My projects <span className="text-accent">.</span>
                 </h2>
                 <WebDesign />

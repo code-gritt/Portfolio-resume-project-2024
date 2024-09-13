@@ -34,7 +34,7 @@ const Services = () => {
                 exit="hidden"
                 transition={{ duration: 1, ease: "easeInOut" }}
               >
-                <h2 className="text-[35px] leading-tight md:text-[51px] md:leading-[1.3] mb-4 font-semibold xl:mt-8">
+                <h2 className="text-[20px] leading-tight md:text-[51px] absolute top-80 left-28 md:block md:leading-[1.3] mb-4 font-semibold xl:mt-8">
                   My Services <span className="text-accent">.</span>
                 </h2>
               </motion.div>
