@@ -239,6 +239,15 @@ const About = () => {
                 </div>
               </motion.div>
             </div>
+            <video
+              className="rotate-180 absolute bottom-[-340px]  h-full w-full left-0 opacity-15 object-cover"
+              preload="false"
+              playsInline
+              loop
+              muted
+              autoPlay
+              src="/cards-video.webm"
+            />
           </div>
           <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
