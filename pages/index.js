@@ -32,7 +32,7 @@ const Home = () => {
               transition={{ duration: 2, ease: "easeInOut" }}
             >
               <h1 className="text-[35px] leading-tight md:text-[57px] md:leading-[1.3] mb-8 font-semibold text-accent">
-                Perfecting the Art of Frontend Engineering {""}
+                Perfecting the Art of Web &nbsp; &nbsp; Development {""}
                 <span className="text-white">In the Digital Realm</span>
               </h1>
             </motion.div>
@@ -44,7 +44,7 @@ const Home = () => {
               transition={{ duration: 2, ease: "easeInOut" }}
             >
               <p className="max-w-sm text-xl xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-                Creating something from bare beginning has always been my
+                Creating something from bare beginnings has always been my
                 passion throughout my life which led me harness the power of
                 frontend engineering design and transforming ideas into digital
                 reality creating new products.

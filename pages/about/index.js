@@ -32,12 +32,12 @@ const aboutData = [
       {
         title: "Styling frameworks",
 
-        desc: "CSS3, SASS, Bootstrap5, Infima, Tailwind CSS, Material UI, Styled Components, shadcn/ui",
+        desc: "CSS3, SASS, Bootstrap5, Infima, Tailwind, Material UI, Styled Components, Shadcn/ui",
       },
       {
         title: "Frameworks",
 
-        desc: "React.js, Next.js, Angular, Svelte, SvelteKit, Node.js",
+        desc: "React.js, React Native, Next.js, Angular, Svelte, SvelteKit, Node.js, AJAX",
       },
       {
         title: "Libraries",
@@ -47,17 +47,22 @@ const aboutData = [
       {
         title: "Databases",
 
-        desc: "MongoDB, Firebase, SQL, Hygraph, Supabase",
+        desc: "MongoDB, Firebase, SQL, Hygraph, Supabase, AWS, Azure, GCP",
       },
       {
         title: "Tools/ IDE",
 
-        desc: "VS code, NPM, Git, Github, Postman API, MongoDB Atlas, Excalidraw, Netlify",
+        desc: "VS code, VS studio, NPM, Postman API, MongoDB Atlas, REST/SOAP APIs, Agile Methodologies, SAAS, Linux, HTTP, Microservices, GraphQL, Figma",
+      },
+      {
+        title: "Devops",
+
+        desc: "Git, Github, Version control, Docker, Jira, Confluence, Atlassian, Bitbucket, Vercel, Netlify",
       },
       {
         title: "Hands-on experience",
 
-        desc: "OAuth, Clerk, Strapi, Stripe, ASP.NET Core",
+        desc: "OAuth, Clerk, Strapi, Stripe, C#, Dotnet, Three.js, GSAP",
       },
       {
         title: "Languages",
@@ -163,6 +168,32 @@ const aboutData = [
       },
     ],
   },
+  {
+    title: "certifications",
+    info: [
+      {
+        title: " AWS, JavaScript, React | Deploy Web Apps on the Cloud",
+      },
+      {
+        title: "AWS Beginner to Intermediate: EC2, IAM, S3 Route",
+      },
+      {
+        title: "AWS EC2 : AWS Certified Solutions Architect - Associate",
+      },
+      {
+        title: "Angular Certificate",
+      },
+      {
+        title: "React.js Certificate",
+      },
+      {
+        title: "Docker",
+      },
+      {
+        title: "Mongoose, Test-Driven Development , NestJS, Jest",
+      },
+    ],
+  },
 ];
 
 const About = () => {
@@ -239,15 +270,6 @@ const About = () => {
                 </div>
               </motion.div>
             </div>
-            <video
-              className="rotate-180 absolute bottom-[-340px]  h-full w-full left-0 opacity-15 object-cover"
-              preload="false"
-              playsInline
-              loop
-              muted
-              autoPlay
-              src="/cards-video.webm"
-            />
           </div>
           <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
